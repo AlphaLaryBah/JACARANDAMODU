@@ -1,16 +1,46 @@
 body,
 html {
-
     height: 100%;
+    margin: 0;
+    text-align: center;
+    overflow-x: scroll;
+
+    font: 400 15px/1.8 'Brygada 1918',
+        serif;
+}
+
+
+.bgBody {
+
     margin: 0;
     text-align: center;
 
     font: 400 15px/1.8 'Brygada 1918',
         serif;
 
+    min-height: 100%;
+    min-width: 100%;
+    overflow-x: scroll;
+
+    height: auto;
+    width: auto;
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
-.footer {
+/* @media screen and (max-width: 1024px) {
+
+    /* Specific to this particular image */
+/* img.bg {
+        left: 50%;
+        margin-left: 512px; */
+/* 50% */
+/* } */
+
+/* } */
+*/ .footer {
     height: 100px;
 }
 
@@ -18,23 +48,30 @@ html {
     color: white;
     font-size: 30px;
 }
-.aboutBody{
+
+.aboutBody {
     overflow-x: hidden;
 }
+
 .bgBody {
     background-image: url("https://scontent.fapa1-1.fna.fbcdn.net/v/t1.6435-9/125929292_178339023941750_5814416093911357900_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=973b4a&_nc_ohc=bmq100m5dgwAX_w6WMs&_nc_ht=scontent.fapa1-1.fna&oh=560f4e9445faa379f9b5b0cec3bd2971&oe=60B3415A");
+
+
     /* https: //images1.westword.com/imager/u/745xauto/11733097/01062020rosettahall014.jpg */
 
     /* Full height */
     height: 100%;
+    margin: 0;
 
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+
 
 }
+
 
 .moduHead {
     padding: 10px;
@@ -155,7 +192,7 @@ h3 {
 }
 
 #showcase h1 {
-    margin-top: 10px;
+    margin-top: 1px;
     background-color: rgba(0, 0, 0, 0.5);
     height: 300px;
     color: red;
