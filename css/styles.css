@@ -4,6 +4,7 @@ html {
     margin: 0;
     text-align: center;
     overflow-x: scroll;
+    /* overflow-y: hidden; */
     
 
     font: 400 15px/1.8 'Brygada 1918',
@@ -40,8 +41,8 @@ html {
     
         min-height: 100%;
         min-width: 100%;
-        overflow-x: scroll;
-    overflow-y: hidden;
+        overflow-x: hidden;
+          overflow-y: hidden;
         height: auto;
         width: auto;
        
@@ -100,7 +101,10 @@ html {
     width: auto;
 
 }
-
+.menuBody{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
 
 
 
@@ -135,7 +139,7 @@ html {
 .moduHead {
     padding: 10px;
     background-color: white;
-    width: 300px;
+    width: 290px;
 
 
 }
@@ -143,13 +147,13 @@ html {
 .moduSpice {
     padding: 10px;
     background-color: white;
-    width: 350px;
+    width: 300px;
 
 }
 .moduLaugh {
     padding: 10px;
     background-color: white;
-    width: 350px;
+    width: 300px;
 
 }
 
@@ -264,7 +268,6 @@ h3 {
     animation: heading;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-
 }
 
 @keyframes heading {
